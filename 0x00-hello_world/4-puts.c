@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - main statement
- * return: 0 if exited appropriately
+ * main - prints the phrase  "programming is like building a multilingual puzzle
+ * Return: 0 if exited appropriately
  */
 int main(void)
 {
@@ -9,3 +10,4 @@ int main(void)
 	return (0);
 
 }
+
