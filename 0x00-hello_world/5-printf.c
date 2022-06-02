@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - printsthe phrase with proper grammar,
- * but the outcome is a piece of art,
- * Return: 0 
+ *main - printsthe phrase with proper grammar,
+ *but the outcome is a piece of art,
+ *Return: 0 
  */
 int main(void)
 {
