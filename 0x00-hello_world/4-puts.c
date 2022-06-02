@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main statement
- * return: 0
+ * return: 0 if exited appropriately
  */
 int main(void)
 {
