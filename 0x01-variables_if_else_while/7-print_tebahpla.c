@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main- prints letters in reverse 
+ * main- prints letters in reverse
  *
  * Return: Always 0 (succes)
  */
