@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * main - prints positive,zero and negative numbers
+ *
  * Return: Always 0 (success)
  */
 
@@ -19,7 +20,7 @@ int main(void)
 	{
 	printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 	printf("%d is negative\n", n);
 	}
