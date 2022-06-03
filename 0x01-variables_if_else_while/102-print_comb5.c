@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints two two digit numbers 
+ * main - prints two two digit numbers
  *
  * Return: Always 0 (success)
  */
@@ -17,9 +17,9 @@ int main(void)
 	putchar((m / 10) + 48);
 	putchar((m % 10) + 48);
 	putchar(' ');
-	putchar((n /10) + 48);
+	putchar((n / 10) + 48);
 	putchar((n % 10) + 48);
-	if (m != 98 || m!= 99)
+	if (m != 98 || m != 99)
 	{
 	putchar(',');
 	putchar(' ');
