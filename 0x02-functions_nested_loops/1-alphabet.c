@@ -2,22 +2,20 @@
 #include "main.h"
 
 /**
- * print_alphabet- prints alphabet in lowercase
+ * print_alphabet - prints alphabet in lowercase
  *
  * Return: Always 0
  */
-
 void print_alphabet(void)
 {
-	char ch;
+	char c;
+	
+	c = 'a';
 
-	ch = 'a';
-
-	while (ch <= 'z')
+	while (c <= 'z')
 	{
-	putchar(ch);
-	ch++;
+	_putchar(c);
+	c++;
 	}
-	putchar('\n');
-
+	_putchar('\n');
 }
