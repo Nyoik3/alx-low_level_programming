@@ -1,8 +1,8 @@
 #include "main.h"
 
-/***
- * print_line - a function that draws a straight line
- * @n: an input
+/**
+ * print_line - a function that draws a straight line in terminal
+ * @n: an input number
  * Return: 0
  */
 
