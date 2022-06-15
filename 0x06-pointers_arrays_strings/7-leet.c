@@ -14,15 +14,15 @@ char *leet(char *s)
 
 	while (*(s + count) != '\0')
 	{
-		for (i = 0; i < 5; i++)
-		{
-			if (*(s + count) == low_letter[i] || *(s + count) == upp_letters[i])
-			{
-				*(s + count) = numbers[i];
-				break;
-			}
-		}
-		count++;
+	for (i = 0; i < 5; i++)
+	{
+	if (*(s + count) == low_letter[i] || *(s + count) == upp_letters[i])
+	{
+		*(s + count) = numbers[i];
+			break;
+	}
+	}
+	count++;
 	}
 	return (s);
 }
