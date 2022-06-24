@@ -21,7 +21,7 @@ int isInteger(const char *s)
 }
 /**
  * main - adds positive numbers
- * @argc: int
+ * @argc: integer
  * @argv: list
  * Return: 0
  */
@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
 	{
 		if (isInteger(argv[argc]))
 		{
-			printf("error\n");
+			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[argc]);
