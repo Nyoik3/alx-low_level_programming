@@ -17,7 +17,8 @@ unsigned int _strspn(char *s, char *accept)
 		while (*accept++)
 			if (*(s - 1) == *(accept - 1))
 			{
-				c++;																			break;													
+				c++;
+				break;
 			}
 		if (!(*--accept))
 			break;
