@@ -1,69 +1,33 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
 /**
- * _strlen - counts array.
- * @s:array of elements
- * Return: 1
- */
-
-char *_strlen(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
-}
-/**
- * _strcpy - copies array
- * @src: array of elements
- * @dest: dest array
- * Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-/**
- * _strdup - array that prints a string
- * @str: array of elements
+ * _strdup - copy
+ * @str: pointer to string
  * Return: pointer
  */
 
 char *_strdup(char *str)
 {
-	char *dst;
-	unsigned int size;
+	char *s;
+	int i = 0, j;
 
-	if (str == 0)
+	if (!str)
+		return (NULL);
+
+	while (*(str + i))
+		i++;
+	i++;
+	s = malloc(sizeof(char) * i);
+
+	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1;
-
-	dst = (char *) malloc(size * sizeof(char));
-
-	if (dst == 0)
+	for (j = 0; j <= i; j++)
 	{
-		return (NULL);
+		s[j] = str[j];
 	}
-	_strcpy(dst, str);
-	return (dst);
+	return (s);
 }
