@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * _strlen - counts array.
  * @s:array of elements
- * Return: i
+ * Return: 1
  */
 
 char *_strlen(char *s)
@@ -13,10 +12,12 @@ char *_strlen(char *s)
 	unsigned int i;
 
 	i = 0;
+
 	while (s[i] != '\0')
 	{
 		i++;
 	}
+
 	return (i);
 }
 /**
@@ -54,6 +55,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
 	size = _strlen(str) + 1;
 
 	dst = (char *) malloc(size * sizeof(char));
