@@ -3,10 +3,10 @@
 
 /**
  * File: 3-function_like_macro.h
- * Desc: Header file that computes the absolute
+ * Desc: Header file that defines a function like macro ABS(x)
  *	value of a number (x).
  */
 
-#define ABS(x) ((x) < 0 ? -1 * (x) : (x))
+#define ABS(x) ((x) < 0 ? (-x) : (x))
 
 #endif
